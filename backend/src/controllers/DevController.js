@@ -12,7 +12,7 @@ module.exports = {
   },
 
   async store (request, response) {
-    const { github_username, techs, latitude, longitude  } = request.body;
+    const { github_username, techs, latitude, longitude } = request.body;
     
     let dev = await Dev.findOne({ github_username });
 
